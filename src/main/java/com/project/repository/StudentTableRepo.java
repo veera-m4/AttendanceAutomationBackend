@@ -11,5 +11,5 @@ import java.util.List;
 @Repository
 public interface StudentTableRepo  extends JpaRepository<StudentTable, String> {
     StudentTable findStudentTableByRollNumber(String rollNo);
-    List<StudentTable> findAllByClassid(int classId);
+    List<StudentTable> findAllByClassid(Long classId);
 }

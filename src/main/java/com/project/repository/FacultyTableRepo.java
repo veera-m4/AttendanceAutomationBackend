@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FacultyTableRepo extends JpaRepository<FacultyTable, String> {
+    FacultyTable findFacultyTableByFacultyId(String tutorId);
 }

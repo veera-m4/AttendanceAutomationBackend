@@ -13,7 +13,7 @@ public class ClassTable {
     private Integer batch;
     private Integer completedSemester;
     private Integer totalNoOfSemester;
-    private Integer tutorId;
+    private String tutorId;
     private Integer departmentId;
     private Integer totalNoOfStudents;
 
@@ -50,11 +50,11 @@ public class ClassTable {
         this.totalNoOfSemester = totalNoOfSemester;
     }
 
-    public Integer getTutorId() {
+    public String getTutorId() {
         return tutorId;
     }
 
-    public void setTutorId(Integer tutorId) {
+    public void setTutorId(String tutorId) {
         this.tutorId = tutorId;
     }
 

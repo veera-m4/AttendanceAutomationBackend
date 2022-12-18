@@ -15,6 +15,8 @@ public class StudentAttendance {
     private Integer totalNumberOfWorking=0;
     private Integer noOfApprovedLeaves=0;
     private Integer totalNumberLeaves=0;
+    private Integer totalNumberOdLeaves;
+    private Double attendancePercentage;
 
     public Long getId() {
         return id;
@@ -62,5 +64,21 @@ public class StudentAttendance {
 
     public void setTotalNumberLeaves(Integer totalNumberLeaves) {
         this.totalNumberLeaves = totalNumberLeaves;
+    }
+
+    public Integer getTotalNumberOdLeaves() {
+        return totalNumberOdLeaves;
+    }
+
+    public void setTotalNumberOdLeaves(Integer totalNumberOdLeaves) {
+        this.totalNumberOdLeaves = totalNumberOdLeaves;
+    }
+
+    public Double getAttendancePercentage() {
+        return attendancePercentage;
+    }
+
+    public void setAttendancePercentage(Double attendancePercentage) {
+        this.attendancePercentage = attendancePercentage;
     }
 }

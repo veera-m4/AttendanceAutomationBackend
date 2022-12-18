@@ -17,13 +17,6 @@ public class StudentTable {
     private Date dateOfBirth;
     private String mailId;
 
-    public String getRollNumber() {
-        return rollNumber;
-    }
-
-    public void setRollNumber(String rollNumber) {
-        this.rollNumber = rollNumber;
-    }
 
     public String getMailId() {
         return mailId;
@@ -57,11 +50,11 @@ public class StudentTable {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getRollNUmber() {
+    public String getRollNumber() {
         return rollNumber;
     }
 
-    public void setRollNUmber(String rollNUmber) {
-        this.rollNumber = rollNUmber;
+    public void setRollNumber(String rollNumber) {
+        this.rollNumber = rollNumber;
     }
 }

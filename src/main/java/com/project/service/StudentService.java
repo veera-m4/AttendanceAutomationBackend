@@ -49,11 +49,12 @@ public class StudentService {
             attendancePercentagebySem.put("Total Number Working Days",studentAttendance.getTotalNumberOfWorking());
             attendancePercentagebySem.put("Total Number Leaves",studentAttendance.getTotalNumberLeaves());
             attendancePercentagebySem.put("Number Approved Leaves",studentAttendance.getNoOfApprovedLeaves());
-            attendancePercentagebySem.put("Percentage",(double)studentAttendance.getTotalNumberOfWorking()/studentAttendance.getTotalNumberLeaves()*100);
+            attendancePercentagebySem.put("Number of Onduty",studentAttendance.getTotalNumberOdLeaves());
+            attendancePercentagebySem.put("Percentage",studentAttendance.getAttendancePercentage());
             attendanceDataBYSemWise.put(i,attendancePercentagebySem);
         }
         result.put("Name",studentTable.getName());
-        result.put("Roll Number",studentTable.getRollNUmber());
+        result.put("Roll Number",studentTable.getRollNumber());
         result.put("Date of Birth",studentTable.getDateOfBirth());
         result.put("Attendance by semester wise",attendanceDataBYSemWise);
         return result;

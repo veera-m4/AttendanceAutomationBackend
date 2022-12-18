@@ -7,12 +7,12 @@ import java.util.Date;
 
 @Entity
 @DynamicUpdate
-public class ApprovedLeave {
+public class ApprovedOdleave {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
-    private String studentRollNumber;
+    private String studentId;
     private Date date;
 
     public Long getId() {
@@ -23,12 +23,12 @@ public class ApprovedLeave {
         this.id = id;
     }
 
-    public String getStudentRollNumber() {
-        return studentRollNumber;
+    public String getStudentId() {
+        return studentId;
     }
 
-    public void setStudentRollNumber(String studentRollNumber) {
-        this.studentRollNumber = studentRollNumber;
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
     public Date getDate() {
